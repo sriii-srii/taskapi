@@ -1,0 +1,5 @@
+com\kaiburr\assessment\taskapi\TaskRepository.class
+com\kaiburr\assessment\taskapi\TaskApiApplication.class
+com\kaiburr\assessment\taskapi\TaskController.class
+com\kaiburr\assessment\taskapi\Task.class
+com\kaiburr\assessment\taskapi\TaskExecution.class

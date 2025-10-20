@@ -1,0 +1,24 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: taskapi
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: taskapi
+  template:
+    metadata:
+      labels:
+        app: taskapi
+    spec:
+      containers:
+        - name: taskapi
+          image: taskapi:latest
+          ports:
+            - containerPort: 8080
+          env:
+            - name: MONGO_HOST
+              value: "mongodb"
+            - name: MONGO_PORT
+              value: "27017"
